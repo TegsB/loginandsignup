@@ -1,0 +1,12 @@
+{% extends "template.html" %}
+
+{% block body%}
+    <p>You do not have any saved games to continue</p>
+
+    <a href="{{url_for('intro')}}" >
+        <button>Start a new game</button>
+    
+    <a href="{{url_for('dashboard')}}" >
+        <button>Return to dashboard</button>
+
+{% endblock%}

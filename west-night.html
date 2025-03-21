@@ -1,0 +1,20 @@
+{% extends "savetemplate.html" %}
+
+{% block body%}
+    <p>you continue walking for several miles until you see lights in the distance. A small village appears on the horizen, just as the night is setting in</p>
+    <p>As you enter the town, you see rows of houses, an empty doorway, shops and an inn.</p>
+
+    <a href="{{url_for('doorway')}}" >
+        <button>Sleep in the doorway</button>
+    </a>
+
+    <a href="{{url_for('shop')}}" >
+        <button>Go to the shop</button>
+    </a>
+
+    <a href="{{url_for('inn')}}" >
+        <button>Go to the inn</button>
+    </a>
+
+{% endblock%}
+    

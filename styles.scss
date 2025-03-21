@@ -1,0 +1,124 @@
+//variables
+$primary-color: #c2f3ff;
+$primary-hover-color: #66e0fe;
+$secondary-color: #fe8d8dd8;
+$secondary-hover-color: #ff4a4ad8;
+$background-color: wheat;
+$container-bg-color: #76d1aa;
+$text-color: #000000;
+$subtext-color: #f397dd;
+$box-bg-color: #9ddf95; 
+
+
+body{
+    background-color: $background-color; /*colour of background of whole page*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+header{ 
+    width: 100%; /*width of the header*/
+    background-color: $container-bg-color;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px 0;
+
+    h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        color: $text-color;
+    }
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+}
+
+.box{ /*colour of box in which everything sits in*/
+    background-color: $box-bg-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+    max-width: 400px;
+    width: 40%;
+    margin: 50px auto;
+
+    p{
+        font-size: 18px;
+        color: $subtext-color;
+        margin-bottom: 20px;
+    }
+}
+
+
+.container{ /*colour of box in which everything sits in*/
+    background-color: $container-bg-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    margin: 50px auto;
+
+    h1 {
+        margin: 1.5rem;
+        font-size: 2.5rem;
+        color: $text-color;
+    }
+    p{
+        font-size: 18px;
+        color: $subtext-color;
+        margin-bottom: 20px;
+    }
+
+    .input-field{ /*the username and password boxes*/
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #333;
+        border-radius: 4px;
+        font-size: 1.5rem;
+        box-sizing: border-box;
+
+        &:focus{
+            border-color: $primary-color;
+            outline: none;
+        }
+    }
+    .btn { /*details of the buttons*/
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &.btn-login{ /*login button*/
+            background-color: $primary-color;
+            color: #000000;
+
+            &:hover {
+                background-color: $primary-hover-color;
+            }
+        }
+
+        &.btn-register{ /*signup button*/
+            background-color: $secondary-color;
+            color: #000000;
+
+            &:hover {
+                background-color: $secondary-hover-color;
+            }
+        }
+    }
+}

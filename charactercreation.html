@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Create your character!</h1>
+        <form id="create-form" action="{{url_for('create')}}" method="post">
+            <input
+                type="text" 
+                name="Name" 
+                placeholder="Name" 
+                class="input-field"
+            />
+            <input 
+                type="text" 
+                name="level" 
+                placeholder="Difficulty"
+                class="input-field"
+            />
+    
+            <input 
+                type="submit" 
+                value="Create" 
+                class="btn btn-create" 
+                onclick="setActionForm ('create')" 
+            />
+    
+        </form>
+    </div>
+    
+    <script>
+        function setActionForm(action){
+            let form = document.getElementById("auth-form");
+            if (action === 'login'){
+                form.action="{{url_for('login')}}";
+                form.method = "post"
+                form.submit();
+            } else if (action === 'register') {
+                form.action = "{{url_for('register')}}";
+                form.method = "post"
+                form.submit();
+            }
+        } 
+    </script>
+
+</body>
+</html>

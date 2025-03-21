@@ -1,0 +1,15 @@
+{% extends "savetemplate.html" %}
+
+{% block body%}
+    
+    <p>You continue through the forest for several minutes until you reach another clearing, with paths leading to the east and west</p>
+    
+    <a href="{{url_for('east')}}" >
+        <button>Go East</button>
+    </a>
+
+    <a href="{{url_for('westNight')}}" >
+        <button>Go West</button>
+    </a>
+
+{% endblock%}

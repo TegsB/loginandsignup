@@ -1,0 +1,23 @@
+{% extends "template.html" %}
+
+{% block body%}
+        
+        <h1>Welcome to my game!</h1>
+
+        <p>You wake up to find yourself in a chair, next to a fire in a small cottage. A man sits opposite to you, smoking a pipe. When he sees that you are awake, he puts down the pipe and leans forward.</p>
+        <p>MAN:"Hello, it is nice to meet you. My name is Stuart and I need your help. You see my great grandfather was a lord in these lands and many hundereds of years ago, he buried some treasure and only left me with this riddle and a map"</p>
+        <p>He turns round and starts to look through a drawer that is overflowing with papers</p>
+        <p>STUART:"Ah, here we go, the riddle." He clears his throat before reading</p>
+        <p>Deep within the forest green, Where ancient oaks stand tall and lean, A hollow trunk, a secret door, Holds riches from times of yore. Beneath the roots that twist and turn, A golden prize for those who yearn.</p>
+        <p>STUART:"I need that treasure, as it contains an important heirloom I wish to give to my daughter. However, if you cannot already tell, I am an old man and cannot make this journey myself. So I need your help"</p>
+
+        
+        <a href="{{url_for('start')}}" >
+            <button>Begin your adventure</button>
+        </a>
+
+        <img src="static/img/cottage.jpg" width="600px">
+
+       
+{% endblock%}
+

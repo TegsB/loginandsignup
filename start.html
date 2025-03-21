@@ -1,0 +1,23 @@
+{% extends "savetemplate.html" %}
+
+{% block body%}
+
+        <p>You find yourself in the depths of the woods. Birds tweet around you and animals step on branches, causing a crack to echo through the trees</p>
+        <p>You look around and see a river, a path leading into the distance and a man leant up against a tree</p>
+
+        <a href="{{url_for('river')}}" >
+            <button>Go to the river</button>
+        </a>
+
+        <a href="{{url_for('clearing')}}" >
+            <button>Leave the clearing</button>
+        </a>
+
+        <a href="{{url_for('man')}}" >
+            <button>Approach the man</button>
+        </a>
+        
+        <img src="static/img/forest.png" width="600px">
+
+{% endblock%}
+

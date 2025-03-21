@@ -1,0 +1,21 @@
+{% extends "savetemplate.html" %}
+
+{% block body%}
+
+        <p>You enter the inn, where an innkeeper stands behind the bar, serving drinks</p>
+        <p>Would you like to pay three silver pieces for a room, try and seduce the bartender or leave the inn?</p>
+
+        <a href="{{url_for('room')}}" >
+            <button>Pay for a room</button>
+        </a>
+
+        <a href="{{url_for('seduce')}}" >
+            <button>Seduce the bartender</button>
+        </a>
+
+        <a href="{{url_for('westNight')}}" >
+            <button>Leave the inn</button>
+        </a>
+
+       
+{% endblock%}
